@@ -19,7 +19,6 @@ Thumbs.db
 !task-build.js
 
 # Ignored folders
-dist
 aot
 .tmp
 demoApp

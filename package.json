@@ -1,6 +1,6 @@
 {
   "name": "ionic3-international-phone-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ionic 3 component providing a international phone number",
   "main": "./dist/es2015/public-api.js",
   "typings": "./dist/es2015/public-api.d.ts",
