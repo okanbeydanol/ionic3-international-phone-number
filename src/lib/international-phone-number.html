@@ -1,0 +1,19 @@
+<ion-row>
+  <form ion-list [formGroup]="mobileForm">
+    <ion-col col-12 class="phone-col">
+      <button class="country-phone-btn" ion-button (click)="openCountries()">
+        <img [src]="domSrv.bypassSecurityTrustUrl(calling_base64)" />
+        {{ calling_codes }}
+        <ion-icon slot="end" name="arrow-down" md="ios-arrow-down"></ion-icon>
+      </button>
+      <ion-input formControlName="phone_number" class="input" #numberInput inputmode="tel" enterkeyhint="done"
+        autocapitalize="none" autocorrect="off" [(ngModel)]="phone" type="tel" placeholder="{{ placeholder }}"
+        (ionChange)="changePhone($event)"></ion-input>
+    </ion-col>
+    <div *ngFor="let error of errorKeys">
+      <div *ngIf="mobileForm.controls.phone_number.hasError(error)" class="core-input-error">
+        <span>{{ this.phoneErrors[error] }}</span>
+      </div>
+    </div>
+  </form>
+</ion-row>
