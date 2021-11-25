@@ -1,6 +1,8 @@
 # ionic3-international-phone-number
 A simple international telephone number input. Allows you to create a phone number field with country dropdown. 
 
+![Plugin preview](https://raw.githubusercontent.com/okanbeydanol/ionic3-international-phone-number/master/demoApp/video/international.gif)
+
 
 ## Installation
 
