@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <international-phone-number (onInputChange)="inputChange($event)" (onCountryChanged)="data($event)" [required]="false" [defaultcountry]="'us'" [minlength]="5" [maxlength]="13"></international-phone-number>
+</ion-content>
